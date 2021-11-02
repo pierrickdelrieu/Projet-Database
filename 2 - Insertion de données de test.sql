@@ -85,3 +85,15 @@ INSERT INTO Camarade VALUES('25');
 INSERT INTO Camarade VALUES('27');
 INSERT INTO Camarade VALUES('28');
 INSERT INTO Camarade VALUES('29');
+
+-- Insertion valeur dans la table 'Loisir'
+INSERT INTO Loisir VALUES('tennis', '1');
+INSERT INTO Loisir VALUES('équitation', '1');
+INSERT INTO Loisir VALUES('musculation', '1');
+INSERT INTO Loisir VALUES('natation', '1');
+INSERT INTO Loisir VALUES('danse', '1');
+INSERT INTO Loisir VALUES('course à pied', '1');
+INSERT INTO Loisir VALUES('écouter de la musique', '1');
+INSERT INTO Loisir VALUES('tutorat', '1');
+INSERT INTO Loisir VALUES('piano','1');
+INSERT INTO Loisir VALUES('jardinage', '1');
