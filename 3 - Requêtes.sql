@@ -17,10 +17,10 @@
 
 
 -- 4. Donner la liste des camarades de classe qui ne sont pas considérés comme amis.
-SELECT DISTINCT c.id_personne, p.prenom FROM Camarade c
+SELECT c.id_personne AS id, p.nom AS Nom , p.prenom AS Prenom FROM Camarade c
 JOIN Personne p ON c.id_personne = p.id_personne
 WHERE NOT EXISTS(
-	  SELECT DISTINCT a.id_personne
+    SELECT a.id_personne
     FROM Ami a
     WHERE c.id_personne = a.id_personne
 );
