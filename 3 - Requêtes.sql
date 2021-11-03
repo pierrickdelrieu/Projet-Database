@@ -14,7 +14,8 @@
 
 
 -- 3. Donner le nombre de séances de révision organisées pendant le mois dernier.
-
+SELECT COUNT(*) AS 'Nombre de séances organisée le mois dernier' FROM SeancesRevision s 
+WHERE MONTH(s.date_seance) < MONTH(CURDATE());
 
 -- 4. Donner la liste des camarades de classe qui ne sont pas considérés comme amis.
 SELECT c.id_personne AS id, p.nom AS Nom , p.prenom AS Prenom FROM Camarade c
