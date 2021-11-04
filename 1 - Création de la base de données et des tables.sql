@@ -33,10 +33,10 @@ CREATE TABLE Membre(
 DROP TABLE IF EXISTS ReseauxSociaux;
 CREATE TABLE ReseauxSociaux(
    id_reseaux INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-   twitter VARCHAR(20) UNIQUE,
-   instagram VARCHAR(20) UNIQUE,
-   snapchat VARCHAR(20) UNIQUE,
-   facebook VARCHAR(20) UNIQUE,
+   twitter VARCHAR(30) UNIQUE,
+   instagram VARCHAR(30) UNIQUE,
+   snapchat VARCHAR(30) UNIQUE,
+   facebook VARCHAR(30) UNIQUE,
    id_personne INT NOT NULL UNIQUE,
    FOREIGN KEY(id_personne) REFERENCES Personne(id_personne)
 );
@@ -53,7 +53,7 @@ CREATE TABLE Utilisateur(
 DROP TABLE IF EXISTS Loisir;
 CREATE TABLE Loisir(
    id_loisir INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-   nom_loisir VARCHAR(50) NOT NULL UNIQUE,
+   nom_loisir VARCHAR(50) NOT NULL,
    id_utilisateur INT NOT NULL,
    FOREIGN KEY(id_utilisateur) REFERENCES Utilisateur(id_utilisateur)
 );
