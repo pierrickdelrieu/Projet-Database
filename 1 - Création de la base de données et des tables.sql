@@ -88,6 +88,7 @@ CREATE TABLE Objectif(
    somme_cible INT NOT NULL,
    etat BOOLEAN NOT NULL,
    id_personne INT NOT NULL UNIQUE,
+   id_date INT NOT NULL,
    FOREIGN KEY(id_personne) REFERENCES Personne(id_personne)
 );
 
@@ -96,7 +97,8 @@ CREATE TABLE Objectif(
 DROP TABLE IF EXISTS Date_E;
 CREATE TABLE Date_E(
    id_date INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-   dates_heure_proposees DATETIME NOT NULL
+   date_proposee DATE NOT NULL,
+   heure_proposee  TIME
 );
 
 

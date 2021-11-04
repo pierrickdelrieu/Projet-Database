@@ -11,16 +11,25 @@
 
 DROP VIEW IF EXISTS ambition;
 CREATE VIEW ambition AS
-SELECT obj.*, b.cagnotte as cagnotte FROM objectif obj, budget b, utilisateur u,personne p, calendrier c
-WHERE  obj.id_objectif = u.id_utilisateur and u.id_utilisateur = b.id_budget and
- u.id_utilisateur = p.id_personne and c.id_calendrier = p.id_personne
- GROUP BY obj.id_objectif HAVING YEAR(CURDATE()) = YEAR(c.date_evenement) + 1;
+SELECT obj.*,b.cagnotte, YEAR(date_obj.date_proposee) FROM objectif obj, budget b, Date_E date_obj
+WHERE date_obj.id_date = obj.id_date and obj.id_personne = b.id_personne and YEAR(CURDATE()) = YEAR(date_obj.date_proposee)+1
+GROUP BY obj.id_objectif;
+
+SELECT * FROM ambition;
 
 -- 2. Créer une vue appelée « top_organisateurs » qui affiche les deux amis qui ont organisé le plus d’évènements jusque-là.
 
 
 -- 3. Créer une vue appelée « aujourd’hui », qui donne la liste des évènements et révisions prévues pour aujourd’hui dans le calendrier, classées par horaire.
+DROP VIEW IF EXISTS  aujourdhui;
+CREATE VIEW aujourdhui AS
+SELECT rev.matiere,rev.type_travail,rev.deadline,rev.date_seance,rev.heure_seance,ev.nom_evenement,ev.prix,date_e.date_proposee,
+date_e.heure_proposee FROM SeancesRevision rev, Evenement ev,Date_E date_e
+WHERE date_e.id_date = ev.id_date and DAY(CURDATE()) = DAY(date_e.date_proposee) and DAY(CURDATE()) = DAY(rev.date_seance)
+AND ev.etat = true
+GROUP BY ev.id_evenement;  
 
+SELECT * FROM aujourdhui;
 
 -- 4. Créer une vue appelée « trouble_fête », qui donne le nom de l’ami qui refuse le plus de dates proposées pour des évènements.
 
