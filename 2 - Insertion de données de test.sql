@@ -478,13 +478,13 @@ INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(8,18,18);
 
 
 -- Insertion valeur dans la table 'Partager'
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,1);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(2,2,5);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(3,3,7);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(4,4,2);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(5,5,10);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(6,6,3);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(7,7,4);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,4);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,5);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,6);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,4,4);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(3,5,9);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(4,6,3);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(2,7,3);
 INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(8,8,6);
 INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(9,9,8);
 INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(10,10,9);
@@ -510,6 +510,18 @@ INSERT INTO Proposer (id_date,id_organisation) VALUES(8,8);
 
  
 -- Insertion valeur dans la table 'Valider'
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 2, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 2, False);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(7, 2, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(6, 4, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(3, 4, False);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 6, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 6, False);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(5, 6, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(9, 6, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(10, 6, True);
+
+
 
 
 
