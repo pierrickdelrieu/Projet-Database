@@ -337,10 +337,10 @@ INSERT INTO Adresse (code_postal,ville,nom_rue,numero_adresse) VALUES('06130', '
 
 
 -- Insertion valeur dans la table 'SeancesRevision'
-INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Mathématiques', 'Préparation projet', '2021-11-20', '2021-11-04', '14:00:00');
-INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Mathématiques', 'Révisions examen', '2021-11-25', '2021-11-10', '14:30:00');
-INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Mathématiques', 'Révisions examen', '2021-11-25', '2021-11-10', '18:00:00');
-INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Informatique', 'Développement projet', '2021-12-03', '2021-11-26', '15:30:00');
+INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Mathématiques', 'Préparation projet', '2021-10-29', '2021-10-15', '14:00:00');
+INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Mathématiques', 'Révisions examen', '2021-10-30', '2021-10-20', '14:30:00');
+INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Mathématiques', 'Révisions examen', '2021-10-30', '2021-10-25', '18:00:00');
+INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Informatique', 'Développement projet', '2021-12-03', '2021-10-28', '15:30:00');
 INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Informatique', 'Préparation soutenance projet', '2021-12-08', '2021-11-30', '16:00:00');
 INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Informatique', 'Révisions examen', '2021-12-10', '2021-12-03', '14:00:00');
 INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Electronique', 'Révisions examen', '2021-12-09', '2021-11-28', '17:00:00');
