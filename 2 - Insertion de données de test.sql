@@ -418,7 +418,7 @@ INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse)
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Soirée cinéma",8,false,2,10,3);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Restaurant",20,false,3,5,8);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Restaurant",20,false,3,17,8);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Journée plage",20,true,4,6,10);
+INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Journée plage",20,true,4,29,10);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("pique-nique",0,false,5,18,1);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("pique-nique",0,false,5,19,1);
 
