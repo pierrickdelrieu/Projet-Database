@@ -413,14 +413,14 @@ INSERT INTO Calendrier (id_personne) VALUES(30);
 
 -- Insertion valeur dans la table 'Evenement'
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Tournois de football",10,false,1,5,7);
+INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Tournois de football",10,true,1,3,1);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Tournois de football",10,true,1,2,1);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Tournois de football",10,true,1,2,1);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Soirée cinéma",8,true,2,10,3);
+INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Soirée cinéma",8,false,2,10,3);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Restaurant",20,false,3,5,8);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Restaurant",20,false,3,17,8);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Journée plage",20,true,4,2,10);
+INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Journée plage",20,true,4,6,10);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("pique-nique",0,false,5,18,1);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("pique-nique",0,true,5,19,1);
+INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("pique-nique",0,false,5,19,1);
 
 
 -- Insertion valeur dans la table 'Proposition_evenement'
