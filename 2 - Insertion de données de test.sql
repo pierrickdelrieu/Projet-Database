@@ -7,7 +7,6 @@
 -- ----------------------------------------------------------
 
 -- Insertion valeur dans la table 'Personne'
-
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Delanu', 'Erica', 'Saint Paul de Vence', 0614493802);
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Botts', 'Charles', 'Grasse', 0623458754);
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Willians', 'Sophie', 'Fréjus', 0786543409);
@@ -38,7 +37,7 @@ INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Gomez', 'Claire
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Legendre', 'Thibault', 'Antibes', 0653627862);
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Ferreira', 'Olivier', 'Juan-les-Pins', 0769934512);
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Gimenez', 'Daniel', 'Saint-Laurent-du-Var', 0712537213);
-INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Vidal', 'Catherine', 'Carros', 0693472134);
+
 
  -- Insertion valeur dans la table 'Membre'
 INSERT INTO Membre (id_personne) VALUES(1);
@@ -138,8 +137,8 @@ INSERT INTO Utilisateur (id_membre) VALUES (28);
 INSERT INTO Utilisateur (id_membre) VALUES(29);
 INSERT INTO Utilisateur (id_membre) VALUES (30);
 
--- Insertion valeur dans la table 'Loisir'
 
+-- Insertion valeur dans la table 'Loisir'
 INSERT INTO Loisir (nom_loisir,id_utilisateur) VALUES('tennis', 1);
 INSERT INTO Loisir (nom_loisir,id_utilisateur) VALUES('équitation', 2);
 INSERT INTO Loisir (nom_loisir,id_utilisateur) VALUES('musculation', 3);
@@ -170,7 +169,6 @@ INSERT INTO Loisir (nom_loisir,id_utilisateur) VALUES('écouter de la musique', 
 INSERT INTO Loisir (nom_loisir,id_utilisateur) VALUES('programmation', 28);
 INSERT INTO Loisir (nom_loisir,id_utilisateur) VALUES('harpe',29);
 INSERT INTO Loisir (nom_loisir,id_utilisateur) VALUES('pêcher', 30);
-
 
 
 -- Insertion valeur dans la table 'Ami'
@@ -226,8 +224,8 @@ INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(8000, 14000, 2
 INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(9000, 9700, 29);
 INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(4800, 7800, 30);
 
--- Insertion valeur dans la table 'Date_E'
 
+-- Insertion valeur dans la table 'Date_E'
 INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-12', '15:00:00');
 INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-04', '14:00:00');
 INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-14', '13:00:00');
@@ -283,7 +281,6 @@ INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-08-10',Null);
 
 
 -- Insertion valeur dans la table 'Objectif'
-
 INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Voiture', 'Acheter une voiture', 'Achat', 15000,false,1,20);
 INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Job d été', 'Trouver un job d été', 'Action', 0,true,2,21);
 INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Parachute', 'Faire du saut en parachute', 'Action', 200,true,3,22);
@@ -315,7 +312,6 @@ INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cibl
 INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Langue', 'Apprendre l\'allemand', 'Quotidien', 0,false,29,48);
 INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Organisation', 'Me lever à 7h tous les jours', 'Quotidien', 0,true,30,49);
 
-
  
 -- Insertion valeur dans la table 'Adresse'
 INSERT INTO Adresse (code_postal,ville,nom_rue,numero_adresse) VALUES('06000', 'Nice', 'route de Lyon', 142);
@@ -340,8 +336,6 @@ INSERT INTO Adresse (code_postal,ville,nom_rue,numero_adresse) VALUES('06300', '
 INSERT INTO Adresse (code_postal,ville,nom_rue,numero_adresse) VALUES('06130', 'Grasse', 'rue Pierre De Coubertin', 24);
 
 
-
-   
 -- Insertion valeur dans la table 'SeancesRevision'
 INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Mathématiques', 'Préparation projet', '2021-11-20', '2021-11-04', '14:00:00');
 INSERT INTO SeancesRevision (matiere,type_travail,deadline,date_seance,heure_seance) VALUES('Mathématiques', 'Révisions examen', '2021-11-25', '2021-11-10', '14:30:00');
@@ -383,8 +377,8 @@ INSERT INTO Camarade (id_personne) VALUES(27);
 INSERT INTO Camarade (id_personne) VALUES(28);
 INSERT INTO Camarade (id_personne) VALUES(29);
 
--- Insertion valeur dans la table 'Calendrier'
 
+-- Insertion valeur dans la table 'Calendrier'
 INSERT INTO Calendrier (id_personne) VALUES(1);
 INSERT INTO Calendrier (id_personne) VALUES(2);
 INSERT INTO Calendrier (id_personne) VALUES(3);
@@ -416,8 +410,8 @@ INSERT INTO Calendrier (id_personne) VALUES(28);
 INSERT INTO Calendrier (id_personne) VALUES(29);
 INSERT INTO Calendrier (id_personne) VALUES(30);
 
--- Insertion valeur dans la table 'Evenement'
 
+-- Insertion valeur dans la table 'Evenement'
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Tournois de football",10,false,1,5,7);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Tournois de football",10,true,1,2,1);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Tournois de football",10,true,1,2,1);
@@ -427,6 +421,7 @@ INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse)
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Journée plage",20,true,4,2,10);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("pique-nique",0,false,5,18,1);
 INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("pique-nique",0,true,5,19,1);
+
 
 -- Insertion valeur dans la table 'Proposition_evenement'
 INSERT INTO Proposition_evenement (id_evenement) VALUES(1);
@@ -449,6 +444,7 @@ INSERT INTO Organiser (id_evenement,id_membre) VALUES(6,5);
 INSERT INTO Organiser (id_evenement,id_membre) VALUES(7,15);
 INSERT INTO Organiser (id_evenement,id_membre) VALUES(8,15);
 
+
 -- Insertion valeur dans la table 'Localiser'
 INSERT INTO Localiser (id_loisir,id_adresse) VALUES(1,1);
 INSERT INTO Localiser (id_loisir,id_adresse) VALUES(2,1);
@@ -458,7 +454,6 @@ INSERT INTO Localiser (id_loisir,id_adresse) VALUES(5,3);
 INSERT INTO Localiser (id_loisir,id_adresse) VALUES(6,4);
 INSERT INTO Localiser (id_loisir,id_adresse) VALUES(7,5);
 INSERT INTO Localiser (id_loisir,id_adresse) VALUES(8,5);
-
 
 
 -- Insertion valeur dans la table 'Participer'
