@@ -226,58 +226,45 @@ INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(4800, 7800, 30
 
 
 -- Insertion valeur dans la table 'Date_E'
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-12', '15:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-04', '14:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-14', '13:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-19', '15:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-20', '11:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-21', '10:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-26', '09:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-27', '16:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-28', '17:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-03', '18:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-04', '18:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-05', '15:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-10', '17:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-11', '14:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-12', '14:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-17', '15:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-18', '12:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-19', '13:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-20', '12:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-10-25',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-06-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-15',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-08-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2019-02-20',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-05-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2017-04-18',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-02-05',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-03-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-08-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-10-25',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-06-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-09-15',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-08-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-02-20',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2019-05-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-09-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2018-04-18',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2019-02-05',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-03-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2019-08-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2019-10-25',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2018-06-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2018-09-15',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2018-08-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2019-02-20',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-05-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2018-09-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-04-18',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2017-02-05',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2019-03-10',Null);
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2020-08-10',Null);
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-31', '18:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-29', '18:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-28', '15:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-25', '17:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-24', '14:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-22', '14:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-20', '15:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-15', '12:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-16', '13:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-10', '12:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-08', '15:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-04', '14:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-29', '13:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-27', '15:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-26', '11:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-25', '10:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-21', '09:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-17', '16:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-18', '17:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-05', '18:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-04', '18:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-03', '15:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-02', '17:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-11', '14:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-12', '14:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-17', '15:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-18', '12:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-19', '13:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-20', '12:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-12', '15:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-04', '14:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-14', '13:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-19', '15:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-20', '11:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-21', '10:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-26', '09:30:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-27', '16:00:00');
+INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-28', '17:00:00');
+
 
 
 -- Insertion valeur dans la table 'Objectif'
@@ -412,15 +399,19 @@ INSERT INTO Calendrier (id_personne) VALUES(30);
 
 
 -- Insertion valeur dans la table 'Evenement'
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Tournois de football",10,false,1,5,7);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Tournois de football",10,true,1,3,1);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Tournois de football",10,true,1,2,1);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Soirée cinéma",8,false,2,10,3);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Restaurant",20,false,3,5,8);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Restaurant",20,false,3,17,8);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("Journée plage",20,true,4,29,10);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("pique-nique",0,false,5,18,1);
-INSERT INTO Evenement (nom_evenement,prix,etat,id_calendrier,id_date,id_adresse) VALUES("pique-nique",0,false,5,19,1);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Mariage", 100, TRUE, 1, 21, 5);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de football", 10, TRUE, 2, 20, 1);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de basket", 10, TRUE, 3, 23, 1);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de tennis", 10, FALSE, NULL, 25, 1);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Soirée cinéma", 8, FALSE, 5, 28, 3);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Restaurant", 31, FALSE, 6, 30, 7);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Restaurant", 45, TRUE, 7, 31, 8);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Journée plage", 23, TRUE, 8, 32, 10);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pique-nique", 12, FALSE, 9, 33, 6);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pique-nique", 15, TRUE, 10, 35, 6);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pièce de théâtre", 35, FALSE, 11, 36, 7);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Concert", 80, TRUE, 12, 22, 7);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Baptême", 0, TRUE, 12, 22, 7);
 
 
 -- Insertion valeur dans la table 'Proposition_evenement'
@@ -432,81 +423,85 @@ INSERT INTO Proposition_evenement (id_evenement) VALUES(5);
 INSERT INTO Proposition_evenement (id_evenement) VALUES(6);
 INSERT INTO Proposition_evenement (id_evenement) VALUES(7);
 INSERT INTO Proposition_evenement (id_evenement) VALUES(8);
+INSERT INTO Proposition_evenement (id_evenement) VALUES(9);
+INSERT INTO Proposition_evenement (id_evenement) VALUES(10);
+INSERT INTO Proposition_evenement (id_evenement) VALUES(11);
+INSERT INTO Proposition_evenement (id_evenement) VALUES(12);
 
 
 -- Insertion valeur dans la table 'Organiser'
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(1,3);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(2,3);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(3,10);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(4,12);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(5,12);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(6,5);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(7,15);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(8,15);
+INSERT INTO Organiser (id_evenement,id_membre) VALUES(1, 3);
+INSERT INTO Organiser (id_evenement,id_membre) VALUES(2, 3);
+INSERT INTO Organiser (id_evenement,id_membre) VALUES(3, 10);
+INSERT INTO Organiser (id_evenement,id_membre) VALUES(4, 12);
+INSERT INTO Organiser (id_evenement,id_membre) VALUES(5, 12);
+INSERT INTO Organiser (id_evenement,id_membre) VALUES(6, 5);
+INSERT INTO Organiser (id_evenement,id_membre) VALUES(7, 15);
+INSERT INTO Organiser (id_evenement,id_membre) VALUES(8, 15);
 
 
 -- Insertion valeur dans la table 'Localiser'
-INSERT INTO Localiser (id_loisir,id_adresse) VALUES(1,1);
-INSERT INTO Localiser (id_loisir,id_adresse) VALUES(2,1);
-INSERT INTO Localiser (id_loisir,id_adresse) VALUES(3,2);
-INSERT INTO Localiser (id_loisir,id_adresse) VALUES(4,3);
-INSERT INTO Localiser (id_loisir,id_adresse) VALUES(5,3);
-INSERT INTO Localiser (id_loisir,id_adresse) VALUES(6,4);
-INSERT INTO Localiser (id_loisir,id_adresse) VALUES(7,5);
-INSERT INTO Localiser (id_loisir,id_adresse) VALUES(8,5);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(1, 1);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(2, 1);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(3, 2);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(4, 3);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(5, 3);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(6, 4);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(7, 5);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(8, 5);
 
 
 -- Insertion valeur dans la table 'Participer'
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(1,1,1);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(2,2,2);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(3,3,3);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(4,4,4);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(5,5,5);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(6,6,6);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(7,7,7);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(8,8,8);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(9,9,9);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(10,10,10);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(11,11,11);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(12,12,12);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(13,13,13);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(14,14,14);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(15,15,15);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(16,16,16);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(17,17,17);
-INSERT INTO Participer (id_utilisateur,id_seance,id_camarade) VALUES(8,18,18);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(1, 1, 1);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(2, 2, 2);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(3, 3, 3);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(4, 4, 4);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(5, 5, 5);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(6, 6, 6);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(7, 7, 7);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(8, 8, 8);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(9, 9, 9);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(10, 10, 10);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(11, 11, 11);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(12, 12, 12);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(13, 13, 13);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(14, 14, 14);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(15, 15, 15);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(16, 16, 16);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(17, 17, 17);
+INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(8, 18, 18);
 
 
 -- Insertion valeur dans la table 'Partager'
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,1);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(2,2,5);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(3,3,7);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(4,4,2);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(5,5,10);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(6,6,3);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(7,7,4);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(8,8,6);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(9,9,8);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(10,10,9);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(11,11,11);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(12,12,12);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(13,13,13);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(14,14,16);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(15,15,17);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(16,16,18);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(17,17,15);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(18,18,16);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(1, 1, 1);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(2, 2, 5);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(3, 3, 7);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(4, 4, 2);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(5, 5, 10);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(6, 6, 3);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(7, 7, 4);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(8, 8, 6);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(9, 9, 8);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(10, 10, 9);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(11, 11, 11);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(12, 12, 12);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(13, 13, 13);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(14, 14, 16);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(15, 15, 17);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(16, 16, 18);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(17, 17, 15);
+INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(18, 18, 16);
 
 
 -- Insertion valeur dans la table 'Proposer'
-INSERT INTO Proposer (id_date,id_organisation) VALUES(1,1);
-INSERT INTO Proposer (id_date,id_organisation) VALUES(2,2);
-INSERT INTO Proposer (id_date,id_organisation) VALUES(3,3);
-INSERT INTO Proposer (id_date,id_organisation) VALUES(4,4);
-INSERT INTO Proposer (id_date,id_organisation) VALUES(5,5);
-INSERT INTO Proposer (id_date,id_organisation) VALUES(6,6);
-INSERT INTO Proposer (id_date,id_organisation) VALUES(7,7);
-INSERT INTO Proposer (id_date,id_organisation) VALUES(8,8);
+INSERT INTO Proposer (id_date, id_organisation) VALUES(1, 1);
+INSERT INTO Proposer (id_date, id_organisation) VALUES(2, 2);
+INSERT INTO Proposer (id_date, id_organisation) VALUES(3, 3);
+INSERT INTO Proposer (id_date, id_organisation) VALUES(4, 4);
+INSERT INTO Proposer (id_date, id_organisation) VALUES(5, 5);
+INSERT INTO Proposer (id_date, id_organisation) VALUES(6, 6);
+INSERT INTO Proposer (id_date, id_organisation) VALUES(7, 7);
+INSERT INTO Proposer (id_date, id_organisation) VALUES(8, 8);
 
  
 -- Insertion valeur dans la table 'Valider'
