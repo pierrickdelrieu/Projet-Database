@@ -22,6 +22,8 @@ CREATE TABLE Personne(
    ville VARCHAR(20) NOT NULL,
    numero_telephone INT NOT NULL UNIQUE
 );
+
+
 -- Structure de la table 'Membre' 
 DROP TABLE IF EXISTS Membre;
 CREATE TABLE Membre(
@@ -29,17 +31,18 @@ CREATE TABLE Membre(
    id_personne INT NOT NULL,
    FOREIGN KEY(id_personne) REFERENCES Personne(id_personne)
 );
+
+
 -- Structure de la table 'ReseauxSociaux'
-DROP TABLE IF EXISTS ReseauxSociaux;
+DROP TABLE IF EXISTS ReseauSocial;
 CREATE TABLE ReseauxSociaux(
-   id_reseaux INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-   twitter VARCHAR(30) UNIQUE,
-   instagram VARCHAR(30) UNIQUE,
-   snapchat VARCHAR(30) UNIQUE,
-   facebook VARCHAR(30) UNIQUE,
-   id_personne INT NOT NULL UNIQUE,
-   FOREIGN KEY(id_personne) REFERENCES Personne(id_personne)
+   id_reseau INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+   nom VARCHAR(30),
+   nom_utilisateur VARCHAR(30),
+   id_membre INT NOT NULL UNIQUE,
+   FOREIGN KEY(id_membre) REFERENCES Membre(id_membre)
 );
+
 
 -- Structure de la table 'Utilisateur'
 DROP TABLE IF EXISTS Utilisateur;
@@ -49,13 +52,23 @@ CREATE TABLE Utilisateur(
    FOREIGN KEY(id_membre) REFERENCES Membre(id_membre)
 );
 
+
 -- Structure de la table 'Loisir'
 DROP TABLE IF EXISTS Loisir;
 CREATE TABLE Loisir(
    id_loisir INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-   nom_loisir VARCHAR(50) NOT NULL,
+   nom_loisir VARCHAR(50) NOT NULL
+);
+
+
+-- Structure de la table 'Pratiquer'
+DROP TABLE IF EXISTS Pratiquer;
+CREATE TABLE Pratiquer(
    id_utilisateur INT NOT NULL,
-   FOREIGN KEY(id_utilisateur) REFERENCES Utilisateur(id_utilisateur)
+   id_loisir INT NOT NULL,
+   PRIMARY KEY(id_utilisateur, id_loisir),
+   FOREIGN KEY(id_utilisateur) REFERENCES utilisateur(id_utilisateur),
+   FOREIGN KEY(id_loisir) REFERENCES Loisir(id_loisir)
 );
 
 
@@ -74,31 +87,23 @@ CREATE TABLE Budget(
    id_budget INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
    argent_en_compte INT NOT NULL,
    cagnotte INT NOT NULL,
-   id_personne INT NOT NULL UNIQUE,
-   FOREIGN KEY(id_personne) REFERENCES Personne(id_personne)
+   id_membre INT NOT NULL UNIQUE,
+   FOREIGN KEY(id_membre) REFERENCES Membre(id_membre)
 );
+
 
 -- Structure de la table 'Objectif'
 DROP TABLE IF EXISTS Objectif;
 CREATE TABLE Objectif(
    id_objectif INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
    nom_objectif VARCHAR(50) NOT NULL,
-   description_objectif VARCHAR(50) NOT NULL,
+   description_objectif VARCHAR(50),
    type_objectif VARCHAR(50) NOT NULL,
    somme_cible INT NOT NULL,
    etat BOOLEAN NOT NULL,
-   id_personne INT NOT NULL UNIQUE,
-   id_date INT NOT NULL,
-   FOREIGN KEY(id_personne) REFERENCES Personne(id_personne)
-);
-
-
--- Structure de la table 'Date_E'
-DROP TABLE IF EXISTS Date_E;
-CREATE TABLE Date_E(
-   id_date INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-   date_proposee DATE NOT NULL,
-   heure_proposee  TIME
+   annee DATE NOT NULL,
+   id_membre INT NOT NULL UNIQUE,
+   FOREIGN KEY(id_membre) REFERENCES Membre(id_membre)
 );
 
 
@@ -133,12 +138,13 @@ CREATE TABLE Camarade(
    FOREIGN KEY(id_personne) REFERENCES Personne(id_personne)
 );
 
+
 -- Structure de la table 'Calendrier'
 DROP TABLE IF EXISTS Calendrier;
 CREATE TABLE Calendrier(
    id_calendrier INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-   id_personne INT NOT NULL UNIQUE,
-   FOREIGN KEY(id_personne) REFERENCES Personne(id_personne)
+   id_membre INT NOT NULL UNIQUE,
+   FOREIGN KEY(id_membre) REFERENCES Membre(id_membre)
 );
 
 
@@ -149,9 +155,10 @@ CREATE TABLE Evenement(
    nom_evenement VARCHAR(50) NOT NULL,
    prix INT NOT NULL,
    etat BOOLEAN NOT NULL,
-   id_date INT,
+   date_deroulement DATE,
+   heure_debut TIME,
+   heure_fin TIME,
    id_adresse INT NOT NULL,
-   FOREIGN KEY(id_date) REFERENCES Date_E(id_date),
    FOREIGN KEY(id_adresse) REFERENCES Adresse(id_adresse)
 );
 
@@ -161,9 +168,11 @@ DROP TABLE IF EXISTS Proposition_evenement;
 CREATE TABLE Proposition_evenement(
    id_organisation INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
    id_evenement INT NOT NULL,
+   date_propose DATE NOT NULL,
+   heure_debut TIME NOT NULL,
+   heure_fin TIME NOT NULL,
    FOREIGN KEY(id_evenement) REFERENCES Evenement(id_evenement)
 );
-
 
 
 -- Structure de la table 'Organiser'
@@ -214,17 +223,6 @@ CREATE TABLE Partager(
 );
 
 
--- Structure de la table 'Proposer'
-DROP TABLE IF exists Proposer;
-CREATE TABLE Proposer(
-   id_date INT,
-   id_organisation INT,
-   PRIMARY KEY(id_date, id_organisation),
-   FOREIGN KEY(id_date) REFERENCES Date_E(id_date),
-   FOREIGN KEY(id_organisation) REFERENCES Proposition_evenement(id_organisation)
-);
-
-
 -- Structure de la table 'Valider'
 DROP TABLE IF exists Valider;
 CREATE TABLE Valider(
@@ -242,7 +240,7 @@ DROP TABLE IF EXISTS Transaction;
 CREATE TABLE Transaction(
    id_transaction INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
    somme INT NOT NULL,
-   date_transaction DATE NOT NULL,
+   date_transaction DATETIME NOT NULL,
    id_budget INT NOT NULL,
    FOREIGN KEY(id_budget) REFERENCES Budget(id_budget)
 );
