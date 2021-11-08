@@ -7,12 +7,20 @@
 -- ----------------------------------------------------------
 
 SET @id_user = 1;
-SET @req_pers = 'SELECT * FROM personne p, membre m, ami a WHERE m.id_membre = a.id_membre and p.id_personne = ?';
 
 
 
 -- 1. Afficher toutes les informations relatives au dernier évènement qui a bien eu lieu : nom, date, nom de l’organisateur, liste des participants, endroit, dépenses.
-
+SELECT e.nom_evenement, d.date_proposee, p.nom, p.prenom, a.code_postal, a.ville, a.nom_rue, a.numero_adresse, e.prix FROM Evenement e
+JOIN Adresse a ON a.id_adresse = e.id_adresse
+JOIN Calendrier c ON c.id_calendrier = e.id_calendrier
+JOIN Personne p ON p.id_personne = c.id_personne
+-- JOIN Proposition_evenement pe ON pe.id_evenement = e.id_evenement
+-- JOIN Valider v ON pe.id_organisation = v.id_organisation
+JOIN Date_E d ON d.id_date = e.id_date 
+WHERE e.etat = True AND d.date_proposee = (select max(d.date_proposee)) AND d.date_proposee < CURDATE()
+ORDER BY d.date_proposee DESC
+LIMIT 1;
 
 -- 2. Donner la liste des amis qui partagent avec vous le même loisir (donné en paramètre).
 SET @loisir_name = 'tennis';
