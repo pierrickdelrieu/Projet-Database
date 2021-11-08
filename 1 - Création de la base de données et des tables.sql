@@ -149,13 +149,13 @@ CREATE TABLE Evenement(
    nom_evenement VARCHAR(50) NOT NULL,
    prix INT NOT NULL,
    etat BOOLEAN NOT NULL,
-   id_calendrier INT NOT NULL,
    id_date INT,
    id_adresse INT NOT NULL,
-   FOREIGN KEY(id_calendrier) REFERENCES Calendrier(id_calendrier),
    FOREIGN KEY(id_date) REFERENCES Date_E(id_date),
    FOREIGN KEY(id_adresse) REFERENCES Adresse(id_adresse)
 );
+
+
 -- Structure de la table 'Proposition_evenement'
 DROP TABLE IF EXISTS Proposition_evenement;
 CREATE TABLE Proposition_evenement(
@@ -248,3 +248,12 @@ CREATE TABLE Transaction(
 );
 
 
+-- Structure de la table 'Planifier'
+DROP TABLE IF EXISTS Planifier;
+CREATE TABLE Planifier(
+   id_evenement INT NOT NULL,
+   id_calendrier INT NOT NULL,
+   PRIMARY KEY(id_evenement, id_calendrier)
+   FOREIGN KEY(id_evenement) REFERENCES Evenement(id_evenement),
+   FOREIGN KEY(id_calendrier) REFERENCES Calendrier(id_calendrier)
+);
