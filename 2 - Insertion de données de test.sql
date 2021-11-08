@@ -399,19 +399,18 @@ INSERT INTO Calendrier (id_personne) VALUES(30);
 
 
 -- Insertion valeur dans la table 'Evenement'
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Mariage", 100, TRUE, 1, 21, 5);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de football", 10, TRUE, 2, 20, 1);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de basket", 10, TRUE, 3, 23, 1);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de tennis", 10, FALSE, NULL, 25, 1);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Soirée cinéma", 8, FALSE, 5, 28, 3);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Restaurant", 31, FALSE, 6, 30, 7);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Restaurant", 45, TRUE, 7, 31, 8);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Journée plage", 23, TRUE, 8, 32, 10);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pique-nique", 12, FALSE, 9, 33, 6);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pique-nique", 15, TRUE, 10, 35, 6);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pièce de théâtre", 35, FALSE, 11, 36, 7);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Concert", 80, TRUE, 12, 22, 7);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Baptême", 0, TRUE, 12, 22, 7);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Mariage", 100, TRUE, 21, 5);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Tournois de football", 10, TRUE, 20, 1);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Tournois de basket", 10, TRUE, 23, 1);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Tournois de tennis", 10, FALSE, 25, 1);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Soirée cinéma", 8, FALSE, 28, 3);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Restaurant", 31, FALSE, 30, 7);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Restaurant", 45, TRUE, 31, 8);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Journée plage", 23, TRUE, 32, 10);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Pique-nique", 12, FALSE, 33, 6);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Pique-nique", 15, TRUE, 35, 6);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Pièce de théâtre", 35, FALSE, 36, 7);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Concert", 80, TRUE, 22, 7);
 
 
 -- Insertion valeur dans la table 'Proposition_evenement'
@@ -473,26 +472,6 @@ INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(8, 18, 18
 
 
 -- Insertion valeur dans la table 'Partager'
-<<<<<<< HEAD
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,4);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,5);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,6);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,4,4);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(3,5,9);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(4,6,3);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(2,7,3);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(8,8,6);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(9,9,8);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(10,10,9);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(11,11,11);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(12,12,12);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(13,13,13);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(14,14,16);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(15,15,17);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(16,16,18);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(17,17,15);
-INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(18,18,16);
-=======
 INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(1, 1, 1);
 INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(2, 2, 5);
 INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(3, 3, 7);
@@ -511,7 +490,6 @@ INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(15, 15, 17);
 INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(16, 16, 18);
 INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(17, 17, 15);
 INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(18, 18, 16);
->>>>>>> 7a6377018ef53dc9b2515d81947df85ee789abe5
 
 
 -- Insertion valeur dans la table 'Proposer'
@@ -526,20 +504,51 @@ INSERT INTO Proposer (id_date, id_organisation) VALUES(8, 8);
 
  
 -- Insertion valeur dans la table 'Valider'
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 2, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 2, False);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(7, 2, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(6, 4, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(3, 4, False);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 6, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 6, False);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(5, 6, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(9, 6, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(10, 6, True);
-
-
-
-
-
-
-
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 1, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(5, 1, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(7, 1, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(8, 1, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(10, 1, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(15, 1, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(17, 1, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(18, 1, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 2, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(3, 2, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(4, 2, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(9, 2, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(12, 2, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(7, 3, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(17, 3, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(3, 4, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(6, 4, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(13, 4, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 5, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 5, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(14, 5, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(11, 5, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(16, 6, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(12, 6, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(8, 7, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(6, 7, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(5, 8, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(9, 8, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(10, 8, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(11, 8, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(13, 8, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 9, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(4, 9, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(12, 9, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(15, 10, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(17, 10, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(8, 11, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(11, 11, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(12, 11, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(16, 11, FALSE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 12, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 12, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(3, 12, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(6, 12, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(9, 12, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(10, 12, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(13, 12, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(18, 12, TRUE);
