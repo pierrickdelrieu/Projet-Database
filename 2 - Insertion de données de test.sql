@@ -424,34 +424,36 @@ INSERT INTO Calendrier (id_membre) VALUES(30);
 
 
 -- Insertion valeur dans la table 'Evenement'
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Mariage", 100, TRUE, 1, 21, 5);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de football", 10, TRUE, 2, 20, 1);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de basket", 10, TRUE, 3, 23, 1);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de tennis", 10, FALSE, NULL, 25, 1);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Soirée cinéma", 8, FALSE, 5, 28, 3);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Restaurant", 31, FALSE, 6, 30, 7);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Restaurant", 45, TRUE, 7, 31, 8);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Journée plage", 23, TRUE, 8, 32, 10);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pique-nique", 12, FALSE, 9, 33, 6);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pique-nique", 15, TRUE, 10, 35, 6);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pièce de théâtre", 35, FALSE, 11, 36, 7);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Concert", 80, TRUE, 12, 22, 7);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Baptême", 0, TRUE, 12, 22, 7);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Mariage", 100, TRUE, '2021-11-07', '14:00:00', '18:00:00', 5);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Match de football", 10, TRUE, '2021-11-04', '21:00:00', '23:00:00', 1);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Match de basket", 10, TRUE, '2021-11-01', '15:00:00', '17:00:00', 1);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Match de tennis", 10, FALSE, '2021-10-29', '10:00:00', '11:30:00', 1);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Soirée cinéma", 8, FALSE, '2021-10-23', '20:40:00', '23:10:00', 3);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Restaurant", 31, FALSE, '2021-10-20', '19:00:00', '20:00:00', 7);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Restaurant", 45, TRUE, '2021-10-19', '20:30:00', '22:00:00', 8);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Journée plage", 23, TRUE, '2021-10-15', '10:00:00', '16:00:00', 10);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Pique-nique", 12, FALSE, '2021-10-10', '11:30:00', '14:00:00', 6);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Pique-nique", 15, TRUE, '2021-09-25', '12:30:00', '14:30:00', 6);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Pièce de théâtre", 35, FALSE, '2021-09-19', '21:00:00', '23:00:00', 7);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Concert", 80, TRUE, '2021-09-15', '20:00:00', '23:30:00', 7);
 
 
 -- Insertion valeur dans la table 'Proposition_evenement'
-INSERT INTO Proposition_evenement (id_evenement) VALUES(1);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(2);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(3);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(4);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(5);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(6);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(7);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(8);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(9);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(10);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(11);
-INSERT INTO Proposition_evenement (id_evenement) VALUES(12);
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(1, '2021-11-07', '14:00:00', '18:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(1, '2021-11-07', '14:00:00', '18:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(1, '2021-11-07', '14:00:00', '18:00:00');
+
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(2, '2021-11-04', '21:00:00', '23:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(3, '2021-11-01', '15:00:00', '17:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(4, '2021-10-29', '10:00:00', '11:30:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(5, '2021-10-23', '20:40:00', '23:10:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(6, '2021-10-20', '19:00:00', '20:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(7, '2021-10-19', '20:30:00', '22:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(8, '2021-10-15', '10:00:00', '16:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(9, '2021-10-10', '11:30:00', '14:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(10, '2021-09-25', '12:30:00', '14:30:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(11, '2021-09-19', '21:00:00', '23:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(12, '2021-09-15', '20:00:00', '23:30:00');
 
 
 -- Insertion valeur dans la table 'Organiser'
