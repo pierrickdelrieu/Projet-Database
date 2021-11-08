@@ -6,6 +6,9 @@
 -- Auteurs : Pierrick Delrieu - Célia Milano - Méric Chenu --
 -- ----------------------------------------------------------
 
+-- moi : reseausocial ami budget objectif camarade calendrier
+-- meric : loisir partager pratiquer evenement propositionevenement
+
 -- Insertion valeur dans la table 'Personne'
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Delanu', 'Erica', 'Saint Paul de Vence', 0614493802);
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Botts', 'Charles', 'Grasse', 0623458754);
@@ -37,6 +40,11 @@ INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Gomez', 'Claire
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Legendre', 'Thibault', 'Antibes', 0653627862);
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Ferreira', 'Olivier', 'Juan-les-Pins', 0769934512);
 INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Gimenez', 'Daniel', 'Saint-Laurent-du-Var', 0712537213);
+INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Frin', 'Martin', 'Villeneuve-Loubet', 0708090897);
+INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Boinet', 'Lou-ann', 'Nice', 0644772233);
+INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Chambon', 'Rose', 'Antibes', 0653688962);
+INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Chambaron', 'Eva', 'Juan-les-Pins', 0788834512);
+INSERT INTO Personne (nom,prenom,ville,numero_telephone) VALUES('Driss', 'Yacine', 'Saint-Laurent-du-Var', 0618837218);
 
 
  -- Insertion valeur dans la table 'Membre'
@@ -72,37 +80,28 @@ INSERT INTO Membre (id_personne) VALUES(29);
 INSERT INTO Membre (id_personne) VALUES(30);
 
 
--- Insertion valeur dans la table 'ReseauxSociaux'
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'Xx_charles_xX', 'charles06130', NULL,NULL,1);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL, 'Sojus', NULL,NULL,2);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL, NULL, 'Gonzales_willians06','Gonzales_willians06',3);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'Lucas_Sargent', NULL, 'lugent',NULL,4);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'C0hen', 'C0hen06', NULL,NULL,5);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'Victoire_TurPain', 'TurPain06', 'Turpain_snap','Victoire_Turpin',6);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'razor', 'Arnautibe', 'arnaud_snap06','Arnaud_Lecomte',7);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'TaoreLaeticia', 'TraorePins06', 'Laeticia_traoresnap',NULL,8);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL, NULL, 'Sebasnap06','Sebastien_navarro',9);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES('Messina', 'Martin_Largarde06', NULL,NULL,10);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'xXLeGrasseXx', NULL, 'MattieuSnap','Matthieu_Lebrun',11);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'Da_Costa', NULL, NULL,'Da_Costa',12);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL,'LaPorteFlash', NULL,'LaPorte_Alexandra',13);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL, NULL, NULL,'Josette_Menard',14);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'Jorier',NULL,'SuiteFourier','Joseph_Fournier',15);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES('Bertrand_le_niçois', NULL, NULL,NULL,16);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL,'Patriciansta', NULL,'Patricia_Huet',17);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES('Milleo', NULL, NULL,'Leo_Millet',18);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES('Faure_Gabriel', NULL, NULL,'Gabriel_Faure',19);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'NoeTwitte', NULL, 'Noemie_snap','Noemie_Lacroix',20);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL, 'LaRoche06', NULL,NULL,21);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL, NULL, NULL,'Adrien_Leclercq',22);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL, NULL, 'Auguste_snap','Auguste_Dumas',23);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'Sabine_Morin',NULL, NULL,NULL,24);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'Nathalie_Verdier',NULL, NULL,NULL,25);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL,NULL, NULL,'Claire_Gomez',26);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( 'Legendre_twix',NULL, NULL,NULL,27);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL,'Olivier_Ferreira_insta', NULL,'Olivier_fb',28);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL,NULL, NULL,'Gimenez_Daniel',29);
-INSERT INTO ReseauxSociaux (twitter,instagram,snapchat,facebook,id_personne) VALUES( NULL,NULL, NULL,'Vidal_Catherine_fb',30);
+-- Insertion valeur dans la table 'Reseau social'
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('instagram', 'erica06', 1);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('instagram', 'Xx_charles_xX', 2);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('facebook', 'charles06130', 2);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('twitter', 'Sojus', 3);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('facebbok', 'Gonzales_willians06', 4);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('snapchat', 'Gonzales_willians06', 4);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('twitter', 'Lucas_Sargent', 5);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('snapchat', 'lugent', 5);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('twitter', 'C0hen', 6);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('instagram', 'C0hen06', 6);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('twitter', 'Victoire_TurPain', 7);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('instagram', 'TurPain06', 7);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('snapchat', 'Turpain_snap', 7);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('facebook', 'Victoire_Turpin', 7);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('instagram', 'razor', 8);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('snapchat', 'Arnautibe', 8);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('facebook', 'arnaud_snap06', 8);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('facebook', 'Arnaud_Lecomte', 8);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('twitter', 'TaoreLaeticia', 9);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('instagram', 'TraorePins06', 9);
+INSERT INTO ReseauSocial (nom,nom_utilisateur,id_membre) VALUES('snapchat', 'Laeticia_traoresnap', 9);
 
 
 -- Insertion valeur dans la table 'Utilisateur'
@@ -172,11 +171,18 @@ INSERT INTO Loisir (nom_loisir,id_utilisateur) VALUES('pêcher', 30);
 
 
 -- Insertion valeur dans la table 'Ami'
+INSERT INTO Ami (id_membre) VALUES(1);
 INSERT INTO Ami (id_membre) VALUES(2);
 INSERT INTO Ami (id_membre) VALUES(3);
+INSERT INTO Ami (id_membre) VALUES(4);
+INSERT INTO Ami (id_membre) VALUES(5);
+INSERT INTO Ami (id_membre) VALUES(6);
 INSERT INTO Ami (id_membre) VALUES(7);
 INSERT INTO Ami (id_membre) VALUES(8);
 INSERT INTO Ami (id_membre) VALUES(9);
+INSERT INTO Ami (id_membre) VALUES(10);
+INSERT INTO Ami (id_membre) VALUES(11);
+INSERT INTO Ami (id_membre) VALUES(12);
 INSERT INTO Ami (id_membre) VALUES(13);
 INSERT INTO Ami (id_membre) VALUES(14);
 INSERT INTO Ami (id_membre) VALUES(15);
@@ -185,119 +191,83 @@ INSERT INTO Ami (id_membre) VALUES(17);
 INSERT INTO Ami (id_membre) VALUES(18);
 INSERT INTO Ami (id_membre) VALUES(19);
 INSERT INTO Ami (id_membre) VALUES(20);
+INSERT INTO Ami (id_membre) VALUES(21);
 INSERT INTO Ami (id_membre) VALUES(22);
+INSERT INTO Ami (id_membre) VALUES(23);
 INSERT INTO Ami (id_membre) VALUES(24);
+INSERT INTO Ami (id_membre) VALUES(25);
 INSERT INTO Ami (id_membre) VALUES(26);
+INSERT INTO Ami (id_membre) VALUES(27);
 INSERT INTO Ami (id_membre) VALUES(28);
+INSERT INTO Ami (id_membre) VALUES(29);
 INSERT INTO Ami (id_membre) VALUES(30);
 
 
 -- Insertion valeur dans la table 'Budget'
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(5000, 15000, 1);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(4000, 9000, 2);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(6000, 6800, 3);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(5500, 7000, 4);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(5700, 15000, 5);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(5900, 13000, 6);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(7000, 12000, 7);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(5700, 14000, 8);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(5900, 15500, 9);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(8400, 16200, 10);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(9000, 8000, 11);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(9500, 9500, 12);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(6400, 9700, 13);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(2300, 6500, 14);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(2800, 7300, 15);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(7600, 8400, 16);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(1500, 9500, 17);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(6500, 13000, 18);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(8300, 14000, 19);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(9500, 16000, 20);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(4300, 12000, 21);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(6700, 11000, 22);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(6800, 12000, 23);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(8500, 13000, 24);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(3500, 14000, 25);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(4500, 18000, 26);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(4000, 12000, 27);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(8000, 14000, 28);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(9000, 9700, 29);
-INSERT INTO Budget (argent_en_compte,cagnotte,id_personne) VALUES(4800, 7800, 30);
-
-
--- Insertion valeur dans la table 'Date_E'
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-31', '18:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-29', '18:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-28', '15:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-25', '17:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-24', '14:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-22', '14:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-20', '15:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-15', '12:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-16', '13:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-10', '12:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-08', '15:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-12-04', '14:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-29', '13:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-27', '15:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-26', '11:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-25', '10:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-21', '09:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-17', '16:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-18', '17:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-05', '18:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-04', '18:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-03', '15:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-11-02', '17:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-11', '14:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-12', '14:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-17', '15:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-18', '12:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-19', '13:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-20', '12:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-12', '15:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-10-04', '14:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-14', '13:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-19', '15:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-20', '11:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-21', '10:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-26', '09:30:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-27', '16:00:00');
-INSERT INTO Date_E (date_proposee,heure_proposee) VALUES('2021-09-28', '17:00:00');
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(5000, 15000, 1);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(4000, 9000, 2);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(6000, 6800, 3);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(5500, 7000, 4);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(5700, 15000, 5);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(5900, 13000, 6);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(7000, 12000, 7);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(5700, 14000, 8);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(5900, 15500, 9);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(8400, 16200, 10);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(9000, 8000, 11);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(9500, 9500, 12);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(6400, 9700, 13);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(2300, 6500, 14);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(2800, 7300, 15);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(7600, 8400, 16);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(1500, 9500, 17);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(6500, 13000, 18);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(8300, 14000, 19);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(9500, 16000, 20);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(4300, 12000, 21);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(6700, 11000, 22);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(6800, 12000, 23);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(8500, 13000, 24);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(3500, 14000, 25);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(4500, 18000, 26);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(4000, 12000, 27);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(8000, 14000, 28);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(9000, 9700, 29);
+INSERT INTO Budget (argent_en_compte,cagnotte,id_membre) VALUES(4800, 7800, 30);
 
 
 
 -- Insertion valeur dans la table 'Objectif'
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Voiture', 'Acheter une voiture', 'Achat', 15000,false,1,20);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Job d été', 'Trouver un job d été', 'Action', 0,true,2,21);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Parachute', 'Faire du saut en parachute', 'Action', 200,true,3,22);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Marathon', 'Courir un marathon', 'Action', 0,false,4,23);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Télévision', 'Acheter une télévision Samsung LED', 'Achat', 500,false,5,24);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Sport', 'Faire du sport au moins 2 à 3 fois par semaine', 'Quotidien', 0,false,6,25);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Vacances', 'Partir en vacances en Espagne en famille', 'Achat', 1000,true,7,26);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Organisation', 'Avoir une meilleure organisation', 'Quotidien', 0,true,8,27);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Alimentation', 'Cuisiner des plats plus équilibrés', 'Quotidien', 0,true,9,28);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Economie', 'Dépenser moins d argent par mois', 'Quotidien', 0,true,10,29);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Lecture', 'Lire un livre par semaine', 'Quotidien', 0,true,11,30);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Sport', 'Commencer la musculation', 'Action', 30,true,12,31);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Parachute', 'Faire du saut en parachute', 'Action', 200,true,13,32);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Tennis', 'Commencer les cours de tennis', 'Action', 100,false,14,33);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Ecole', 'Travailler au moins 2h par jour après les cours', 'Quotidien', 0,true,15,34);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Sport', 'Faire du sport au moins 2 à 3 fois par semaine', 'Quotidien', 0,true,16,35);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Travail', 'Trouver une alternance', 'Action', 0,false,17,36);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Langue', 'Apprendre l\'italien', 'Quotidien', 0,true,18,37);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Travail', 'Finir mon projet de programmation', 'Quotidien', 0,false,19,38);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Travail', 'Finir mon livre pour l\'école', 'Quotidien', 0,true,20,39);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Sport', 'Faire du canyoning', 'Action', 100,false,21,40);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Lecture', 'Lire un livre par semaine', 'Quotidien', 0,false,22,41);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Sport', 'Commencer la musculation', 'Action', 30,false,23,42);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Sport', 'Faire du cheval', 'Action', 1000,true,24,43);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Foot', 'Commencer les cours de foot', 'Action', 50,true,25,44);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Ecole', 'Faire mon rapport de stage avant la fin du mois', 'Quotidien', 0,false,26,45);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Conduire', 'Apprendre à conduire', 'Action', 2000,false,27,46);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Travail', 'Trouver un stage', 'Action', 0,true,28,47);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Langue', 'Apprendre l\'allemand', 'Quotidien', 0,false,29,48);
-INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_personne,id_date) VALUES('Organisation', 'Me lever à 7h tous les jours', 'Quotidien', 0,true,30,49);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Voiture', 'Acheter une voiture', 'Achat', 15000,false,1,20);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Job d été', 'Trouver un job d été', 'Action', 0,true,2,21);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Parachute', 'Faire du saut en parachute', 'Action', 200,true,3,22);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Marathon', 'Courir un marathon', 'Action', 0,false,4,23);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Télévision', 'Acheter une télévision Samsung LED', 'Achat', 500,false,5,24);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Sport', 'Faire du sport au moins 2 à 3 fois par semaine', 'Quotidien', 0,false,6,25);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Vacances', 'Partir en vacances en Espagne en famille', 'Achat', 1000,true,7,26);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Organisation', 'Avoir une meilleure organisation', 'Quotidien', 0,true,8,27);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Alimentation', 'Cuisiner des plats plus équilibrés', 'Quotidien', 0,true,9,28);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Economie', 'Dépenser moins d argent par mois', 'Quotidien', 0,true,10,29);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Lecture', 'Lire un livre par semaine', 'Quotidien', 0,true,11,30);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Sport', 'Commencer la musculation', 'Action', 30,true,12,31);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Parachute', 'Faire du saut en parachute', 'Action', 200,true,13,32);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Tennis', 'Commencer les cours de tennis', 'Action', 100,false,14,33);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Ecole', 'Travailler au moins 2h par jour après les cours', 'Quotidien', 0,true,15,34);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Sport', 'Faire du sport au moins 2 à 3 fois par semaine', 'Quotidien', 0,true,16,35);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Travail', 'Trouver une alternance', 'Action', 0,false,17,36);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Langue', 'Apprendre l\'italien', 'Quotidien', 0,true,18,37);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Travail', 'Finir mon projet de programmation', 'Quotidien', 0,false,19,38);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Travail', 'Finir mon livre pour l\'école', 'Quotidien', 0,true,20,39);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Sport', 'Faire du canyoning', 'Action', 100,false,21,40);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Lecture', 'Lire un livre par semaine', 'Quotidien', 0,false,22,41);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Sport', 'Commencer la musculation', 'Action', 30,false,23,42);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Sport', 'Faire du cheval', 'Action', 1000,true,24,43);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Foot', 'Commencer les cours de foot', 'Action', 50,true,25,44);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Ecole', 'Faire mon rapport de stage avant la fin du mois', 'Quotidien', 0,false,26,45);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Conduire', 'Apprendre à conduire', 'Action', 2000,false,27,46);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Travail', 'Trouver un stage', 'Action', 0,true,28,47);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Langue', 'Apprendre l\'allemand', 'Quotidien', 0,false,29,48);
+INSERT INTO Objectif (nom_objectif,description_objectif,type_objectif,somme_cible,etat,id_membre,id_date) VALUES('Organisation', 'Me lever à 7h tous les jours', 'Quotidien', 0,true,30,49);
 
  
 -- Insertion valeur dans la table 'Adresse'
@@ -362,55 +332,60 @@ INSERT INTO Camarade (id_personne) VALUES(24);
 INSERT INTO Camarade (id_personne) VALUES(25);
 INSERT INTO Camarade (id_personne) VALUES(27);
 INSERT INTO Camarade (id_personne) VALUES(28);
-INSERT INTO Camarade (id_personne) VALUES(29);
+INSERT INTO Camarade (id_personne) VALUES(31);
+INSERT INTO Camarade (id_personne) VALUES(32);
+INSERT INTO Camarade (id_personne) VALUES(33);
+INSERT INTO Camarade (id_personne) VALUES(34);
+INSERT INTO Camarade (id_personne) VALUES(35);
 
 
 -- Insertion valeur dans la table 'Calendrier'
-INSERT INTO Calendrier (id_personne) VALUES(1);
-INSERT INTO Calendrier (id_personne) VALUES(2);
-INSERT INTO Calendrier (id_personne) VALUES(3);
-INSERT INTO Calendrier (id_personne) VALUES(4);
-INSERT INTO Calendrier (id_personne) VALUES(5);
-INSERT INTO Calendrier (id_personne) VALUES(6);
-INSERT INTO Calendrier (id_personne) VALUES(7);
-INSERT INTO Calendrier (id_personne) VALUES(8);
-INSERT INTO Calendrier (id_personne) VALUES(9);
-INSERT INTO Calendrier (id_personne) VALUES(10);
-INSERT INTO Calendrier (id_personne) VALUES(11);
-INSERT INTO Calendrier (id_personne) VALUES(12);
-INSERT INTO Calendrier (id_personne) VALUES(13);
-INSERT INTO Calendrier (id_personne) VALUES(14);
-INSERT INTO Calendrier (id_personne) VALUES(15);
-INSERT INTO Calendrier (id_personne) VALUES(16);
-INSERT INTO Calendrier (id_personne) VALUES(17);
-INSERT INTO Calendrier (id_personne) VALUES(18);
-INSERT INTO Calendrier (id_personne) VALUES(19);
-INSERT INTO Calendrier (id_personne) VALUES(20);
-INSERT INTO Calendrier (id_personne) VALUES(21);
-INSERT INTO Calendrier (id_personne) VALUES(22);
-INSERT INTO Calendrier (id_personne) VALUES(23);
-INSERT INTO Calendrier (id_personne) VALUES(24);
-INSERT INTO Calendrier (id_personne) VALUES(25);
-INSERT INTO Calendrier (id_personne) VALUES(26);
-INSERT INTO Calendrier (id_personne) VALUES(27);
-INSERT INTO Calendrier (id_personne) VALUES(28);
-INSERT INTO Calendrier (id_personne) VALUES(29);
-INSERT INTO Calendrier (id_personne) VALUES(30);
+INSERT INTO Calendrier (id_membre) VALUES(1);
+INSERT INTO Calendrier (id_membre) VALUES(2);
+INSERT INTO Calendrier (id_membre) VALUES(3);
+INSERT INTO Calendrier (id_membre) VALUES(4);
+INSERT INTO Calendrier (id_membre) VALUES(5);
+INSERT INTO Calendrier (id_membre) VALUES(6);
+INSERT INTO Calendrier (id_membre) VALUES(7);
+INSERT INTO Calendrier (id_membre) VALUES(8);
+INSERT INTO Calendrier (id_membre) VALUES(9);
+INSERT INTO Calendrier (id_membre) VALUES(10);
+INSERT INTO Calendrier (id_membre) VALUES(11);
+INSERT INTO Calendrier (id_membre) VALUES(12);
+INSERT INTO Calendrier (id_membre) VALUES(13);
+INSERT INTO Calendrier (id_membre) VALUES(14);
+INSERT INTO Calendrier (id_membre) VALUES(15);
+INSERT INTO Calendrier (id_membre) VALUES(16);
+INSERT INTO Calendrier (id_membre) VALUES(17);
+INSERT INTO Calendrier (id_membre) VALUES(18);
+INSERT INTO Calendrier (id_membre) VALUES(19);
+INSERT INTO Calendrier (id_membre) VALUES(20);
+INSERT INTO Calendrier (id_membre) VALUES(21);
+INSERT INTO Calendrier (id_membre) VALUES(22);
+INSERT INTO Calendrier (id_membre) VALUES(23);
+INSERT INTO Calendrier (id_membre) VALUES(24);
+INSERT INTO Calendrier (id_membre) VALUES(25);
+INSERT INTO Calendrier (id_membre) VALUES(26);
+INSERT INTO Calendrier (id_membre) VALUES(27);
+INSERT INTO Calendrier (id_membre) VALUES(28);
+INSERT INTO Calendrier (id_membre) VALUES(29);
+INSERT INTO Calendrier (id_membre) VALUES(30);
 
 
 -- Insertion valeur dans la table 'Evenement'
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Mariage", 100, TRUE, 21, 5);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Tournois de football", 10, TRUE, 20, 1);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Tournois de basket", 10, TRUE, 23, 1);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Tournois de tennis", 10, FALSE, 25, 1);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Soirée cinéma", 8, FALSE, 28, 3);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Restaurant", 31, FALSE, 30, 7);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Restaurant", 45, TRUE, 31, 8);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Journée plage", 23, TRUE, 32, 10);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Pique-nique", 12, FALSE, 33, 6);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Pique-nique", 15, TRUE, 35, 6);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Pièce de théâtre", 35, FALSE, 36, 7);
-INSERT INTO Evenement (nom_evenement, prix,etat, id_date, id_adresse) VALUES("Concert", 80, TRUE, 22, 7);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Mariage", 100, TRUE, 1, 21, 5);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de football", 10, TRUE, 2, 20, 1);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de basket", 10, TRUE, 3, 23, 1);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Tournois de tennis", 10, FALSE, NULL, 25, 1);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Soirée cinéma", 8, FALSE, 5, 28, 3);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Restaurant", 31, FALSE, 6, 30, 7);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Restaurant", 45, TRUE, 7, 31, 8);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Journée plage", 23, TRUE, 8, 32, 10);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pique-nique", 12, FALSE, 9, 33, 6);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pique-nique", 15, TRUE, 10, 35, 6);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Pièce de théâtre", 35, FALSE, 11, 36, 7);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Concert", 80, TRUE, 12, 22, 7);
+INSERT INTO Evenement (nom_evenement, prix,etat, id_calendrier, id_date, id_adresse) VALUES("Baptême", 0, TRUE, 12, 22, 7);
 
 
 -- Insertion valeur dans la table 'Proposition_evenement'
@@ -472,24 +447,24 @@ INSERT INTO Participer (id_utilisateur, id_seance, id_camarade) VALUES(8, 18, 18
 
 
 -- Insertion valeur dans la table 'Partager'
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(1, 1, 1);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(2, 2, 5);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(3, 3, 7);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(4, 4, 2);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(5, 5, 10);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(6, 6, 3);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(7, 7, 4);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(8, 8, 6);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(9, 9, 8);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(10, 10, 9);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(11, 11, 11);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(12, 12, 12);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(13, 13, 13);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(14, 14, 16);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(15, 15, 17);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(16, 16, 18);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(17, 17, 15);
-INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(18, 18, 16);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,4);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,5);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,1,6);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(1,4,4);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(3,5,9);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(4,6,3);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(2,7,3);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(8,8,6);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(9,9,8);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(10,10,9);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(11,11,11);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(12,12,12);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(13,13,13);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(14,14,16);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(15,15,17);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(16,16,18);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(17,17,15);
+INSERT INTO Partager (id_utilisateur,id_loisir,id_ami) VALUES(18,18,16);
 
 
 -- Insertion valeur dans la table 'Proposer'
@@ -504,51 +479,20 @@ INSERT INTO Proposer (id_date, id_organisation) VALUES(8, 8);
 
  
 -- Insertion valeur dans la table 'Valider'
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 1, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(5, 1, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(7, 1, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(8, 1, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(10, 1, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(15, 1, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(17, 1, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(18, 1, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 2, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(3, 2, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(4, 2, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(9, 2, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(12, 2, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(7, 3, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(17, 3, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(3, 4, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(6, 4, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(13, 4, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 5, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 5, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(14, 5, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(11, 5, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(16, 6, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(12, 6, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(8, 7, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(6, 7, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(5, 8, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(9, 8, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(10, 8, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(11, 8, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(13, 8, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 9, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(4, 9, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(12, 9, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(15, 10, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(17, 10, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(8, 11, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(11, 11, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(12, 11, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(16, 11, FALSE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 12, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 12, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(3, 12, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(6, 12, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(9, 12, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(10, 12, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(13, 12, TRUE);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(18, 12, TRUE);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 2, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 2, False);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(7, 2, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(6, 4, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(3, 4, False);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 6, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 6, False);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(5, 6, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(9, 6, True);
+INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(10, 6, True);
+
+
+
+
+
+
+
