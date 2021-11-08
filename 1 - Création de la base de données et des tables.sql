@@ -33,9 +33,9 @@ CREATE TABLE Membre(
 );
 
 
--- Structure de la table 'ReseauxSociaux'
+-- Structure de la table 'ReseauSocial'
 DROP TABLE IF EXISTS ReseauSocial;
-CREATE TABLE ReseauxSociaux(
+CREATE TABLE ReseauSocial(
    id_reseau INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
    nom VARCHAR(30),
    nom_utilisateur VARCHAR(30),
