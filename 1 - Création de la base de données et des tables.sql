@@ -39,7 +39,7 @@ CREATE TABLE ReseauSocial(
    id_reseau INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
    nom VARCHAR(30),
    nom_utilisateur VARCHAR(30),
-   id_membre INT NOT NULL UNIQUE,
+   id_membre INT NOT NULL,
    FOREIGN KEY(id_membre) REFERENCES Membre(id_membre)
 );
 
