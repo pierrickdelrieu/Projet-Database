@@ -469,14 +469,18 @@ INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heu
 INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(12, '2021-09-15', '20:00:00', '23:30:00');
 
 -- Insertion valeur dans la table 'Organiser'
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(1, 3);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(2, 3);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(3, 10);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(4, 12);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(5, 12);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(6, 5);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(7, 15);
-INSERT INTO Organiser (id_evenement,id_membre) VALUES(8, 15);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(1, 3);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(2, 2);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(3, 8);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(4, 12);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(5, 14);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(6, 15);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(7, 18);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(8, 21);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(9, 22);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(10, 25);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(11, 27);
+INSERT INTO Organiser (id_evenement, id_membre) VALUES(12, 28);
 
 
 -- Insertion valeur dans la table 'Localiser'
