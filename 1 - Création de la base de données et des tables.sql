@@ -227,11 +227,11 @@ CREATE TABLE Partager(
 DROP TABLE IF exists Valider;
 CREATE TABLE Valider(
    id_ami INT,
-   id_organisation INT,
+   id_proposition INT,
    etat BOOLEAN NOT NULL,
-   PRIMARY KEY(id_ami, id_organisation),
+   PRIMARY KEY(id_ami, id_proposition),
    FOREIGN KEY(id_ami) REFERENCES Ami(id_ami),
-   FOREIGN KEY(id_organisation) REFERENCES Proposition_evenement(id_organisation)
+   FOREIGN KEY(id_proposition) REFERENCES Proposition_evenement(id_proposition)
 );
 
 
