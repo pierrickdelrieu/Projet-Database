@@ -155,7 +155,7 @@ CREATE TABLE Evenement(
    nom_evenement VARCHAR(50) NOT NULL,
    prix INT NOT NULL,
    etat BOOLEAN NOT NULL,
-   date_deroulement DATE,
+   date_evenement DATE,
    heure_debut TIME,
    heure_fin TIME,
    id_adresse INT NOT NULL,
@@ -166,9 +166,9 @@ CREATE TABLE Evenement(
 -- Structure de la table 'Proposition_evenement'
 DROP TABLE IF EXISTS Proposition_evenement;
 CREATE TABLE Proposition_evenement(
-   id_organisation INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+   id_proposition INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
    id_evenement INT NOT NULL,
-   date_propose DATE NOT NULL,
+   date_proposee DATE NOT NULL,
    heure_debut TIME NOT NULL,
    heure_fin TIME NOT NULL,
    FOREIGN KEY(id_evenement) REFERENCES Evenement(id_evenement)
