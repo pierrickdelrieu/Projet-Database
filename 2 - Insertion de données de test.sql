@@ -634,6 +634,31 @@ INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(30, 30, 18);
 INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(30, 18, 18);
 INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(30, 19, 19);
 
+
+-- Insertion valeur dans la table 'Planifier'
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(1, 2);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(1, 8);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(1, 10);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(2, 1);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(2, 7);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(3, 4);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(3, 5);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(3, 28);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(7, 2);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(7, 5);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(8, 8);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(8, 9);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(8, 11);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(10, 23);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(10, 3);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(10, 12);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(12, 17);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(12, 18);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(12, 19);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(12, 21);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(12, 22);
+INSERT INTO Planifier (id_evenement, id_calendrier) VALUES(12, 25);
+ 
  
 -- Insertion valeur dans la table 'Valider'
 -- Mariage, 2 propositions, 3 amis
