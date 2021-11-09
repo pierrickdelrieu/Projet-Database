@@ -57,6 +57,10 @@ WHERE NOT EXISTS(
 
 -- 7. Afficher la liste des dépenses ainsi que des rentrées d’argent du mois en cours.
 
+SELECT u.id_utilisateur, transaction_a.somme AS transaction_argent,transaction_a.date_transaction FROM Utilisateur u,
+Transaction_t transaction_a, Membre m, Budget budg 
+WHERE u.id_utilisateur = @id_user AND u.id_membre = m.id_membre AND m.id_membre = budg.id_membre AND
+budg.id_budget = transaction_a.id_budget AND MONTH(transaction_a.date_transaction) = MONTH(CURDATE())-1;
 
 -- 8. Donner le taux d’acceptation des évènements (nombre d’évènements validés sur le nombre total d’évènements proposés) pour chaque organisateur.
 
