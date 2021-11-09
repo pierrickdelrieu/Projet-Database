@@ -480,14 +480,36 @@ INSERT INTO Organiser (id_evenement,id_membre) VALUES(8, 15);
 
 
 -- Insertion valeur dans la table 'Localiser'
-INSERT INTO Localiser (id_loisir, id_adresse) VALUES(1, 1);
-INSERT INTO Localiser (id_loisir, id_adresse) VALUES(2, 1);
-INSERT INTO Localiser (id_loisir, id_adresse) VALUES(3, 2);
-INSERT INTO Localiser (id_loisir, id_adresse) VALUES(4, 3);
-INSERT INTO Localiser (id_loisir, id_adresse) VALUES(5, 3);
-INSERT INTO Localiser (id_loisir, id_adresse) VALUES(6, 4);
-INSERT INTO Localiser (id_loisir, id_adresse) VALUES(7, 5);
-INSERT INTO Localiser (id_loisir, id_adresse) VALUES(8, 5);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(1, 18);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(2, 17);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(3, 15);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(4, 19);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(5, 20);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(6, 11);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(7, 14);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(8, 12);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(9, 13);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(10, 16);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(11, 8);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(12, 7);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(13, 5);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(14, 9);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(15, 10);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(16, 1);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(17, 4);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(18, 2);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(19, 3);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(20, 6);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(21, 11);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(22, 1);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(23, 20);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(24, 3);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(25, 13);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(26, 8);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(27, 5);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(28, 16);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(29, 6);
+INSERT INTO Localiser (id_loisir, id_adresse) VALUES(30, 14);
 
 
 -- Insertion valeur dans la table 'Participer'
