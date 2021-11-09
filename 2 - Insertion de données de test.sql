@@ -424,37 +424,49 @@ INSERT INTO Calendrier (id_membre) VALUES(30);
 
 
 -- Insertion valeur dans la table 'Evenement'
-INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Mariage", 100, TRUE, '2021-11-07', '14:00:00', '18:00:00', 5);
-INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Match de football", 10, TRUE, '2021-11-04', '21:00:00', '23:00:00', 1);
-INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Match de basket", 10, TRUE, '2021-11-01', '15:00:00', '17:00:00', 1);
-INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Match de tennis", 10, FALSE, '2021-10-29', '10:00:00', '11:30:00', 1);
-INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Soirée cinéma", 8, FALSE, '2021-10-23', '20:40:00', '23:10:00', 3);
-INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Restaurant", 31, FALSE, '2021-10-20', '19:00:00', '20:00:00', 7);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Mariage", 100, TRUE, '2021-11-06', '14:00:00', '18:00:00', 5);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Match de football", 10, TRUE, '2021-11-08', '21:00:00', '23:00:00', 1);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Match de basket", 10, TRUE, '2021-11-05', '15:00:00', '17:00:00', 1);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Match de tennis", 10, FALSE, NULL , NULL, NULL, 1);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Soirée cinéma", 8, FALSE, NULL , NULL, NULL, 3);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Restaurant", 31, FALSE, NULL , NULL, NULL, 7);
 INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Restaurant", 45, TRUE, '2021-10-19', '20:30:00', '22:00:00', 8);
 INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Journée plage", 23, TRUE, '2021-10-15', '10:00:00', '16:00:00', 10);
-INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Pique-nique", 12, FALSE, '2021-10-10', '11:30:00', '14:00:00', 6);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Pique-nique", 12, FALSE, NULL , NULL, NULL, 6);
 INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Pique-nique", 15, TRUE, '2021-09-25', '12:30:00', '14:30:00', 6);
-INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Pièce de théâtre", 35, FALSE, '2021-09-19', '21:00:00', '23:00:00', 7);
+INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Pièce de théâtre", 35, FALSE, NULL , NULL, NULL, 7);
 INSERT INTO Evenement (nom_evenement, prix, etat, date_evenement, heure_debut, heure_fin, id_adresse) VALUES("Concert", 80, TRUE, '2021-09-15', '20:00:00', '23:30:00', 7);
 
 
 -- Insertion valeur dans la table 'Proposition_evenement'
-INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(1, '2021-11-07', '14:00:00', '18:00:00');
-INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(1, '2021-11-07', '14:00:00', '18:00:00');
-INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(1, '2021-11-07', '14:00:00', '18:00:00');
-
-INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(2, '2021-11-04', '21:00:00', '23:00:00');
-INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(3, '2021-11-01', '15:00:00', '17:00:00');
-INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(4, '2021-10-29', '10:00:00', '11:30:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(1, '2021-11-06', '14:00:00', '18:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(1, '2021-11-06', '13:00:00', '18:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(2, '2021-11-08', '21:00:00', '23:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(2, '2021-11-08', '17:00:00', '19:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(2, '2021-11-09', '21:00:00', '23:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(2, '2021-11-09', '17:00:00', '19:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(3, '2021-11-05', '15:00:00', '17:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(4, '2021-11-01', '10:00:00', '11:30:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(4, '2021-10-31', '10:00:00', '11:30:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(4, '2021-10-30', '10:00:00', '11:30:00');
 INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(5, '2021-10-23', '20:40:00', '23:10:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(5, '2021-10-23', '17:10:00', '19:40:00');
 INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(6, '2021-10-20', '19:00:00', '20:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(6, '2021-10-18', '19:00:00', '20:00:00');
 INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(7, '2021-10-19', '20:30:00', '22:00:00');
 INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(8, '2021-10-15', '10:00:00', '16:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(8, '2021-10-15', '10:30:00', '16:30:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(8, '2021-10-15', '11:00:00', '17:00:00');
 INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(9, '2021-10-10', '11:30:00', '14:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(9, '2021-10-09', '11:30:00', '14:00:00');
 INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(10, '2021-09-25', '12:30:00', '14:30:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(10, '2021-09-24', '12:00:00', '14:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(10, '2021-09-23', '12:00:00', '14:00:00');
 INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(11, '2021-09-19', '21:00:00', '23:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(11, '2021-09-19', '20:30:00', '22:30:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(11, '2021-09-18', '21:00:00', '23:00:00');
+INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(11, '2021-09-18', '20:30:00', '22:30:00');
 INSERT INTO Proposition_evenement (id_evenement, date_proposee, heure_debut, heure_fin) VALUES(12, '2021-09-15', '20:00:00', '23:30:00');
-
 
 -- Insertion valeur dans la table 'Organiser'
 INSERT INTO Organiser (id_evenement,id_membre) VALUES(1, 3);
@@ -611,20 +623,90 @@ INSERT INTO Proposer (id_date, id_organisation) VALUES(8, 8);
 
  
 -- Insertion valeur dans la table 'Valider'
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 2, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 2, False);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(7, 2, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(6, 4, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(3, 4, False);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(1, 6, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(2, 6, False);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(5, 6, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(9, 6, True);
-INSERT INTO Valider (id_ami, id_organisation, etat) VALUES(10, 6, True);
-
-
-
-
-
-
-
+-- Mariage, 2 propositions, 3 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(2, 1, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(8, 1, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(10, 1, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(2, 2, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(8, 2, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(10, 2, TRUE);
+-- Match de foot, 4 propositions, 2 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(1, 3, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(7, 3, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(1, 4, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(7, 4, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(1, 5, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(7, 5, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(1, 6, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(7, 6, FALSE);
+-- Match de basket, 1 proposition, 4 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(4, 7, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(5, 7, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(28, 7, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(13, 7, FALSE);
+-- Match de tennis, 3 propositions, 3 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(3, 8, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(6, 8, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(24, 8, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(3, 9, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(6, 9, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(24, 9, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(3, 10, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(6, 10, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(24, 10, FALSE);
+-- Soirée cinéma, 2 propositions, 2 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(20, 11, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(15, 11, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(20, 12, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(15, 12, FALSE);
+-- Restaurant, 2 propositions, 3 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(7, 13, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(14, 13, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(15, 13, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(7, 14, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(14, 14, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(15, 14, FALSE); 
+-- Restaurant, 1 proposition, 2 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(2, 15, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(5, 15, TRUE);
+-- Journée plage, 3 propositions, 3 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(8, 16, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(9, 16, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(11, 16, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(8, 17, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(9, 17, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(11, 17, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(8, 18, TRUE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(9, 18, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(11, 18, TRUE);
+-- Pique-nique, 2 propositons, 2 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(6, 19, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(13, 19, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(6, 20, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(13, 20, FALSE); 
+-- Pique-nique, 3 propostions, 3 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(23, 21, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(3, 21, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(12, 21, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(23, 22, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(3, 22, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(12, 22, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(23, 23, TRUE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(3, 23, FALSE);
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(12, 23, FALSE);
+-- Pièce de théâtre, 4 propositons, 2 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(20, 24, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(29, 24, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(20, 25, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(29, 25, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(20, 26, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(29, 26, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(20, 27, FALSE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(29, 27, FALSE); 
+-- Concert, 1 proposition, 6 amis
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(17, 28, TRUE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(18, 28, TRUE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(19, 28, TRUE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(21, 28, TRUE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(22, 28, TRUE); 
+INSERT INTO Valider (id_ami, id_proposition, etat) VALUES(25, 28, TRUE); 
