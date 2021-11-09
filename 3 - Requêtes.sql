@@ -22,17 +22,21 @@ WHERE e.etat = True AND d.date_proposee = (select max(d.date_proposee)) AND d.da
 ORDER BY d.date_proposee DESC
 LIMIT 1;
 
+
 -- 2. Donner la liste des amis qui partagent avec vous le même loisir (donné en paramètre).
 SET @loisir_name = 'tennis';
 SELECT nom_loisir, p.id_personne, nom, prenom FROM personne p, membre m, Ami a, Partager pa, loisir l
 WHERE pa.id_utilisateur = @id_user and pa.id_ami = a.id_ami and m.id_membre = a.id_membre and p.id_personne = m.id_personne and l.nom_loisir = @loisir_name and pa.id_loisir = l.id_loisir;
 
 
-
-
 -- 3. Donner le nombre de séances de révision organisées pendant le mois dernier.
-SELECT COUNT(*) AS 'Nombre de séances organisée le mois dernier' FROM SeancesRevision s 
+SELECT COUNT() AS 'Nombre de séances organisée le mois dernier' FROM SeancesRevision s 
 WHERE MONTH(s.date_seance) < MONTH(CURDATE());
+
+-- 3 (bis) . Donner le nombre de séances de révision organisées pendant le mois dernier par l'utilisateur
+SELECT COUNT() AS 'Nombre de séances organisée le mois dernier' FROM Participer p, SeancesRevision s
+WHERE MONTH(s.date_seance) < MONTH(CURDATE()) and p.id_utilisateur = @id_user and s.id_seance = p.id_seance;
+
 
 -- 4. Donner la liste des camarades de classe qui ne sont pas considérés comme amis.
 SELECT c.id_personne AS id, p.nom AS Nom , p.prenom AS Prenom FROM Camarade c
@@ -43,7 +47,6 @@ WHERE NOT EXISTS(
 	WHERE pa.id_utilisateur = @id_user and pa.id_ami = a.id_ami and m.id_membre = a.id_membre and p.id_personne = m.id_personne
 
 );
-
 
 
 -- 5. Donner la liste des amis qui habitent la même ville où aura lieu un évènement donné.
