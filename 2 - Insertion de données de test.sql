@@ -610,17 +610,6 @@ INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(30, 30, 18);
 INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(30, 18, 18);
 INSERT INTO Partager (id_utilisateur, id_loisir, id_ami) VALUES(30, 19, 19);
 
-
--- Insertion valeur dans la table 'Proposer'
-INSERT INTO Proposer (id_date, id_organisation) VALUES(1, 1);
-INSERT INTO Proposer (id_date, id_organisation) VALUES(2, 2);
-INSERT INTO Proposer (id_date, id_organisation) VALUES(3, 3);
-INSERT INTO Proposer (id_date, id_organisation) VALUES(4, 4);
-INSERT INTO Proposer (id_date, id_organisation) VALUES(5, 5);
-INSERT INTO Proposer (id_date, id_organisation) VALUES(6, 6);
-INSERT INTO Proposer (id_date, id_organisation) VALUES(7, 7);
-INSERT INTO Proposer (id_date, id_organisation) VALUES(8, 8);
-
  
 -- Insertion valeur dans la table 'Valider'
 -- Mariage, 2 propositions, 3 amis
