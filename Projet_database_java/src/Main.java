@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
 
         String url = "jdbc:mysql://localhost:3306/ecole?autoReconnect=true&useSSL=false";
-        String user = "root";
-        String password = "Picpic01";
+        String user = "user";
+        String password = "password";
 
         try {
             Connection con = DriverManager.getConnection(url, user, password);
